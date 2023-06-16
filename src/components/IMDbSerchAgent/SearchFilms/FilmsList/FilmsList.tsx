@@ -21,7 +21,7 @@ export default function FilmsList() {
     }, [selectedFilms])
 
     const imageBodyTemplate = (item: Films) => {
-        return <Link to={`/film-card/${item.imdbID}`}><img src={item.Poster} alt={item.Title} width="64px" className="shadow-4"/></Link>;
+        return <Link to={`/ra-redux-toolkit-ts/film-card/${item.imdbID}`}><img src={item.Poster} alt={item.Title} width="64px" className="shadow-4"/></Link>;
     };
 
     const onSelectionChange = (event: DataTableSelectionChangeEvent<Films[]>) => {
