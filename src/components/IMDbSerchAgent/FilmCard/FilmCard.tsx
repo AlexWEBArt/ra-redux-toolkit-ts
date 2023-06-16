@@ -16,12 +16,6 @@ export default function FilmCard() {
         }
     }, [])
 
-    useEffect(() => {
-        if (film) {
-
-        }
-    }, [film])
-
     return (
 
         <Card title={film?.Title} >

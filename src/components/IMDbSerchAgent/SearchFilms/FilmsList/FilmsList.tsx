@@ -18,7 +18,7 @@ export default function FilmsList() {
             }
             dispatch(addFilm(item))
         })
-    }, [selectedFilms])
+    }, [selectedFilms?.length])
 
     const imageBodyTemplate = (item: Films) => {
         return <Link to={`/ra-redux-toolkit-ts/film-card/${item.imdbID}`}><img src={item.Poster} alt={item.Title} width="64px" className="shadow-4"/></Link>;
