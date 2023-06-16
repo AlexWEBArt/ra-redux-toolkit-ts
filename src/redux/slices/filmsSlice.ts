@@ -116,9 +116,9 @@ const filmsSlice = createSlice({
             state.searchInput = action.payload;
             state.showMore = false;
         },
-        addFilm(state, action: PayloadAction<Films>) {
+        addFilm(state, action: PayloadAction<Films[]>) {
             console.log(action)
-            state.favorite.push(action.payload);
+            state.favorite = action.payload;
             userStorage.addFavorite(state.favorite);
         },
         removeFilm(state, action: PayloadAction<string>) {
