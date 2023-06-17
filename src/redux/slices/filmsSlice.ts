@@ -85,12 +85,7 @@ const filmsSlice = createSlice({
                 };
 
                 if (action.payload.Search) {
-                    console.log(state.items)
-                    action.payload.Search.forEach(item => {
-                        console.log(item)
-                        state.items.push(item)}
-                        );
-                    console.log(state.items)
+                    action.payload.Search.forEach(item => state.items.push(item));
                 }
             })
             .addCase(filmCard.pending, (state) => {

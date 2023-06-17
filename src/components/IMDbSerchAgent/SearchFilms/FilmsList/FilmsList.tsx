@@ -19,7 +19,8 @@ export default function FilmsList() {
 
         dispatch(addFilm(value))
     };
-
+    console.log(items)
+    console.log(favorite)
     return (
         <div className="card">
             <DataTable value={items} size={"small"} sortField="price" sortOrder={-1} tableStyle={{ minWidth: '40rem' }} onSelectionChange={onSelectionChange} selection={favorite!}>
