@@ -56,11 +56,12 @@ type FilmsState = {
 
 userStorage.initialStorage()
 
-const userFavorite = userStorage.storageLoadFavorite()
+const loadStorage = userStorage.storageLoadFavorite();
+console.log(loadStorage.favotire)
 
 const initialState: FilmsState = {
     items: [],
-    favorite: userFavorite,
+    favorite: loadStorage.favotire,
     film: null,
     searchInput: '',
     showMore: false,
