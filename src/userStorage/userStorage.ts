@@ -9,7 +9,7 @@ export const userStorage = {
         }
     },
 
-    addFavorite(favorite: Films[]) {
+    addFavorite(favorite: { favorite: Films[] }) {
         this.storage.setItem('IMDbSerchAgent', JSON.stringify(favorite));
     },
     

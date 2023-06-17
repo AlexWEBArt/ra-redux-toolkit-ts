@@ -57,11 +57,11 @@ type FilmsState = {
 userStorage.initialStorage()
 
 const loadStorage = userStorage.storageLoadFavorite();
-console.log(loadStorage.favotire)
+console.log(loadStorage.favorite)
 
 const initialState: FilmsState = {
     items: [],
-    favorite: loadStorage.favotire,
+    favorite: loadStorage.favorite,
     film: null,
     searchInput: '',
     showMore: false,
@@ -119,11 +119,11 @@ const filmsSlice = createSlice({
         addFilm(state, action: PayloadAction<Films[]>) {
             console.log(action)
             state.favorite = action.payload;
-            userStorage.addFavorite(state.favorite);
+            userStorage.addFavorite({favorite: state.favorite});
         },
         removeFilm(state, action: PayloadAction<string>) {
             state.favorite = state.favorite.filter(item => item.imdbID !== action.payload);
-            userStorage.addFavorite(state.favorite)
+            userStorage.addFavorite({favorite: state.favorite})
         },
     },
 })

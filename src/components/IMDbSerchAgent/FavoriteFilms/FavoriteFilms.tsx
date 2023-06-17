@@ -54,7 +54,7 @@ export default function FavoriteFilms() {
             </div>
         );
     };
-
+    console.log(favorite)
     return (
         <div className="card">
             <DataTable value={favorite} size={"small"} sortField="price" sortOrder={-1} tableStyle={{ minWidth: '40rem' }} onSelectionChange={onSelectionChange} selection={selectedCustomers!}>
@@ -68,9 +68,9 @@ export default function FavoriteFilms() {
             <Dialog visible={deleteProductDialog} style={{ width: '32rem' }} breakpoints={{ '960px': '75vw', '641px': '90vw' }} header="Удалить?" modal footer={deleteProductDialogFooter} onHide={hideDeleteProductDialog}>
                 <div className="confirmation-content">
                     <i className="pi pi-exclamation-triangle mr-3" style={{ fontSize: '2rem' }} />
-                    {favorite[0] && (
+                    {selectedCustomers && (
                         <span>
-                            Точно хочешь убрать из избранного <b>{favorite[0].Title}</b>?
+                            Точно хочешь убрать из избранного <b>{selectedCustomers.Title}</b>?
                         </span>
                     )}
                 </div>
