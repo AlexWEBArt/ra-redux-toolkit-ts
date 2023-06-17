@@ -30,8 +30,10 @@ export default function FavoriteFilms() {
 
     const deleteProduct = () => {
         setDeleteProductDialog(false);
-        if (!selectedCustomers) {return null}
-        dispatch(removeFilm(selectedCustomers.imdbID));
+        if (selectedCustomers) {
+            dispatch(removeFilm(selectedCustomers.imdbID))
+        }
+        
     };
 
     const deleteProductDialogFooter = (

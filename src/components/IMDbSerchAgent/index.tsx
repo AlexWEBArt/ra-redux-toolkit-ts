@@ -11,8 +11,8 @@ export default function IMDbSearchAgent() {
             <Menu />
             <Routes>
                 <Route path='/ra-redux-toolkit-ts/' element={<SearchFilms />}></Route>
-                <Route path='/ra-redux-toolkit-ts/film-card/:imdbID' element={<FilmCard />}></Route>
                 <Route path='/ra-redux-toolkit-ts/favorite' element={<FavoriteFilms />}></Route>
+                <Route path='/ra-redux-toolkit-ts/film-card/:imdbID' element={<FilmCard />}></Route>
 
                 {/* <Route path='/ra-online-store/*' element={<P404 />}></Route> */}
             </Routes>
