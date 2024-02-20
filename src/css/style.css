@@ -1,7 +1,6 @@
 #root {
     max-width: 1280px;
-    min-width: 80vw;
-    
+
     margin: 5vh auto;
     text-align: center;
 }
@@ -62,7 +61,6 @@
     line-height: 3rem;
     cursor: pointer;
     text-decoration: none;
-    /* text-transform: uppercase; */
     color: #919191;
     opacity: .6;
     border-bottom-width: .2rem;
@@ -84,14 +82,37 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 450px) {
+    #root {
+        margin: 0;
+    }
     .main {
-        width: 90vw;
-        height: 90vh;
+        height: 100vh;
     }
 
     .menu {
         font-size: 12px;
+    }
+
+    .p-datatable-table {
+        max-width: 200px;
+    }
+    
+    .p-column-title {
+        font-size: 0.8rem;
+    }
+
+    .p-icon {
+        width: 11px;
+        height: 11px;
+    }
+
+    .cell {
+        font-size: 0.8rem;
+    }
+
+    .p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+        padding: 0.4rem 0.4rem;
     }
 
     .card-box {

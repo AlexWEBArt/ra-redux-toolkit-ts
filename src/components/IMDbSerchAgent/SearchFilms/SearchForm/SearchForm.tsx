@@ -22,7 +22,7 @@ export default function SearchForm() {
     return(
         <div className="card flex justify-content-center">
             <form onSubmit={handleSubmitSearchForm}>
-                <AutoComplete placeholder={'Введите название фильма'} value={searchInput} onChange={(e) => dispatch(searchFilms(e.value))}/>
+                <AutoComplete placeholder={'Введите название фильма (english)'} value={searchInput} onChange={(e) => dispatch(searchFilms(e.value))}/>
             </form>  
         </div>
     )

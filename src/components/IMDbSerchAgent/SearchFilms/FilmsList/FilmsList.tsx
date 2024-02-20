@@ -23,7 +23,7 @@ export default function FilmsList() {
     console.log(favorite)
     return (
         <div className="card">
-            <DataTable value={items} size={"small"} sortField="price" sortOrder={-1} tableStyle={{ minWidth: '40rem' }} onSelectionChange={onSelectionChange} selection={favorite!}>
+            <DataTable value={items} size={"small"} sortField="price" sortOrder={-1} tableStyle={{ minWidth: '100%' }} onSelectionChange={onSelectionChange} selection={favorite!}>
                 <Column header="Постер" body={imageBodyTemplate} style={{ width: '20%' }}/>
                 <Column field="Title" header="Название" sortable style={{ width: '55%' }}></Column>
                 <Column field="Type" header="Тип" sortable style={{ width: '10%' }}></Column>
