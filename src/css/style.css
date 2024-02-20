@@ -1,11 +1,12 @@
 #root {
     max-width: 1280px;
-
+    min-width: 80vw;
     margin: 5vh auto;
     text-align: center;
 }
 
 .main {
+    width: 90vw;
     height: 90vh;
 }
 
@@ -79,23 +80,28 @@
     border-bottom-color: #C7D2FE;
 }
 
+.p-button:disabled {
+    background-color: #9E9E9E;
+    border-color: #9E9E9E;
+}
 
 
 
 @media (max-width: 450px) {
     #root {
+        min-width: fit-content;
         margin: 0;
     }
     .main {
+        width: 100vw;
         height: 100vh;
     }
+    /* .p-panel-header {
+        width: 100%;
+    } */
 
     .menu {
         font-size: 12px;
-    }
-
-    .p-datatable-table {
-        max-width: 200px;
     }
     
     .p-column-title {
@@ -129,4 +135,10 @@
         text-align: center;
     }
 
+}
+
+@media (max-width: 350px) {
+    .main {
+        width: fit-content;
+    }
 }

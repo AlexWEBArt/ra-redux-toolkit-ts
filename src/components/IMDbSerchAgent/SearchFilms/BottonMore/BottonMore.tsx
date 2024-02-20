@@ -22,7 +22,7 @@ export default function ButtonMore() {
 
     return (
         <div className="card flex flex-wrap justify-content-center gap-3">
-            <Button label="Submit" icon="pi pi-check" loading={loading} onClick={handleClickMore} />
+            <Button label="Ещё..." icon="pi pi-check" loading={loading} onClick={handleClickMore} />
         </div>
     )
 }
