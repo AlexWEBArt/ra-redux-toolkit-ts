@@ -7,6 +7,7 @@ https://alexwebart.github.io/ra-redux-toolkit-ts
 ## Технологии
 
 1. Верстка - HTML, CSS (фреймворк Prime-React);
+1. Сборка приложения - Vite;
 1. Библиотеки - TypeScript, Rеact, React-Router, React-Prime;
 1. Хранение состояния и побочных эффектов - Redux, Redux Toolkit, Redux Thunk;
 1. Визуализация - gh-pages;
