@@ -25,6 +25,6 @@ https://alexwebart.github.io/ra-redux-toolkit-ts
 Хостинг сервера - Render (url) - https://ra-redux-toolkit-ts.onrender.com - бесплатный хостинг, подъем из спящего режима около 30 сек.
 
 Запросы к серверу осуществляются через OMDb API с установкой необходимых {params} для нужного результата.
-Более подробно с API можно познакомиться [здесь](https://www.omdbapi.com)\
+Более подробно с API можно познакомиться [здесь](https://www.omdbapi.com)
 
 Хранение Избранных фильмов осуществляеться в LocalStorage
